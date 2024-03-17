@@ -4,9 +4,120 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Weather</title>
 </head>
 <body>
+<div id="container">
+    <div class="flex-container weather-container">
+        <div class="main-weather-info">
+            <h1 class="city-name">Bobruisk</h1>
+            <p class="date">Sunday, 10 March 2024</p>
+            <p class="time">Now, 17:44</p>
+            <p class="condition">Sunny</p>
+            <div class="temperature">
+                <h1>3 °C</h1>
+                <img src="./images/wind-speed-icon.png">
+            </div>
+            <button class="change-units">Celsius</button>
+            <form action="#" class="search-form">
+                <label for="searchLocation">Type your location</label>
+                <div>
+                    <input type="text" placeholder="Search Location..." id="searchLocation">
+                    <button type="submit" class="search-sub"><img src="./images/searchIcon.png"></button>
+                </div>
+            </form>
+        </div>
+        <div class="extended-weather-info">
+            <div class="ex-info">
+                <div class="ex-info-icon">
+                    <img src="./images/feels-like-icon.png">
+                </div>
+                <div class="ex-info-text">
+                    <p class="ex-info-label">Feels Like</p>
+                    <p class="ex-info-data feels-like">5°C</p>
+                </div>
+            </div>
+            <div class="ex-info">
+                <div class="ex-info-icon">
+                    <img src="./images/humidity-icon.png">
+                </div>
+                <div class="ex-info-text">
+                    <p class="ex-info-label">Humidity</p>
+                    <p class="ex-info-data humidity">50%</p>
+                </div>
+            </div>
+            <div class="ex-info">
+                <div class="ex-info-icon">
+                    <img src="./images/wind-speed-icon.png">
+                </div>
+                <div class="ex-info-text">
+                    <p class="ex-info-label">Wind Speed</p>
+                    <p class="ex-info-data wind-speed">12km/h</p>
+                </div>
+            </div>
+            <div class="ex-info">
+                <div class="ex-info-icon">
+                    <img src="./images/rain-chance-icon.png">
+                </div>
+                <div class="ex-info-text">
+                    <p class="ex-info-label">Cloud</p>
+                    <p class="ex-info-data cloud">78%</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="flex-container forecast-container">
+        <div>
+            <button class="change-forecast">Daily</button>
+            <button class="change-forecast">Hourly</button>
+        </div>
+        <div class="forecast">
+            <div class="day-forecast">
+                <h1 class="forecast-day-name">Monday</h1>
+                <h2 class="forecast-temperature">Monday</h2>
+                <h4 class="forecast-min-temperature">Monday</h4>
+                <img src="" class="forecast-icon">
+            </div>
+            <div class="day-forecast">
+                <h1 class="forecast-day-name">Monday</h1>
+                <h2 class="forecast-temperature">Monday</h2>
+                <h4 class="forecast-min-temperature">Monday</h4>
+                <img src="" class="forecast-icon">
+            </div>
+            <div class="day-forecast">
+                <h1 class="forecast-day-name">Monday</h1>
+                <h2 class="forecast-temperature">Monday</h2>
+                <h4 class="forecast-min-temperature">Monday</h4>
+                <img src="" class="forecast-icon">
+            </div>
+            <div class="day-forecast">
+                <h1 class="forecast-day-name">Monday</h1>
+                <h2 class="forecast-temperature">Monday</h2>
+                <h4 class="forecast-min-temperature">Monday</h4>
+                <img src="" class="forecast-icon">
+            </div>
+            <div class="day-forecast">
+                <h1 class="forecast-day-name">Monday</h1>
+                <h2 class="forecast-temperature">Monday</h2>
+                <h4 class="forecast-min-temperature">Monday</h4>
+                <img src="" class="forecast-icon">
+            </div>
+            <div class="day-forecast">
+                <h1 class="forecast-day-name">Monday</h1>
+                <h2 class="forecast-temperature">Monday</h2>
+                <h4 class="forecast-min-temperature">Monday</h4>
+                <img src="" class="forecast-icon">
+            </div>
+            <div class="day-forecast">
+                <h1 class="forecast-day-name">Monday</h1>
+                <h2 class="forecast-temperature">Monday</h2>
+                <h4 class="forecast-min-temperature">Monday</h4>
+                <img src="" class="forecast-icon">
+            </div>
+        </div>
+    </div>
+</div>
 
+<script src="./bundle.js"></script>
 </body>
 </html>

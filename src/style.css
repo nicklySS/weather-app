@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("../dist/images/body-background.jpg");
+    padding: 50px 25px;
+}
+
+body * {
+    color: white;
+    font-family: "Montserrat Medium", sans-serif;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.flex-container {
+    flex: 1;
+    display: flex;
+}
+
+.weather-container {
+    gap: 100vh;
+    justify-content: center;
+}
+
+.weather-container * {
+    margin: 0;
+}
+
+.forecast-container {
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+
+.change-forecast {
+    width: 100px;
+    background-color: transparent;
+    border-radius: 10px;
+    display: none;
+}
+
+.change-forecast:nth-child(1) {
+    border-bottom: 2px solid white;
+}
+
+.change-forecast:nth-child(2) {
+
+}
+
+.main-weather-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    height: 450px;
+    max-width: 250px;
+    gap: 10px;
+    font-size: 20px;
+}
+
+.city-name {
+    font-size: 36px;
+}
+
+.temperature {
+    font-size: 24px;
+}
+
+.main-weather-info > * {
+    flex: 1;
+}
+
+.change-units {
+    width: max-content;
+    max-height: 25px;
+    border-radius: 8px;
+    border: 2px solid gray;
+    color: white;
+    background-color: transparent;
+    font-size: 16px;
+}
+
+.change-units:hover {
+    border: 2px solid white;
+}
+
+.change-units:active {
+    border: 2px solid lightgreen;
+}
+
+#searchLocation {
+    border: none;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    height: 30px;
+    width: 80%;
+    color: white;
+    background-color: transparent;
+    padding: 5px;
+    margin-bottom: 5px;
+    outline: none;
+}
+
+.search-form > div {
+    border-bottom: 2px solid white;
+    display: flex;
+    width: max-content;
+}
+
+.search-sub {
+    background-color: transparent;
+    border: none;
+    width: max-content;
+}
+
+.search-sub > img {
+    width: 25px;
+}
+
+.extended-weather-info {
+    flex: 1;
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    height: 450px;
+    max-width: max-content;
+}
+
+.extended-weather-info > * {
+    flex: 1;
+    justify-content: right;
+    text-align: right;
+}
+
+.ex-info {
+    display: flex;
+    font-size: 16px;
+}
+
+.ex-info > * {
+    flex: 1;
+}
+
+.ex-info-icon > img {
+    width: 50px;
+}
+
+.forecast {
+    flex: 1;
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+}
+
+.day-forecast {
+    flex: 1;
+    max-width: max-content;
+}
